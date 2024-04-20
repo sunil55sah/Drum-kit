@@ -1,0 +1,113 @@
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.w {
+ background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.l {
+  background-image: url("images/kick.png");
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+ 
+.pressed {
+  box-shadow: 0 3px 4px 0 #e4f003ee;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+
+ /* Style for the footer notes */
+ .notes {
+  color: #333;; /* Default color */
+  transition: color 0.3s; /* Smooth transition effect */
+}
+
+/* Hover effect */
+.notes:hover {
+  color: #ffcc00; /* Brighter color on hover */
+}
+
+
+
+
+ /* Keyframe animation for vibrating effect */
+ @keyframes vibrate {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, -2px); }
+  40% { transform: translate(2px, 2px); }
+  60% { transform: translate(-2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+/* Apply animation to the emoji */
+.vibrating-emoji {
+  animation: vibrate 0.1s infinite; /* Apply the vibrate animation infinitely */
+  display: inline-block; /* Ensure the emoji is displayed inline with text */
+  font-size: 1em; /* Adjust the font size of the emoji */
+}
